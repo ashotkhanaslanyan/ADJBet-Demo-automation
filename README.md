@@ -1,0 +1,1 @@
+# GlobalSQA-Auto
