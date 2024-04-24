@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d84f976-d47d-4ee8-858b-83383a3aa7ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/NavigationTests/FTFAuthorizedServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage/NotificationsAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage/NotificationsAlert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage/AdjBetNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage/AdjBetNotifications.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage/Repository/MainPageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage/Repository/MainPageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage/Tools/DecryptCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage/Tools/DecryptCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/credentials.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/credentials.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DeclineNotificationsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NavigationTests/FTFAuthorizedServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NavigationTests/FTFAuthorizedServicesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +120,7 @@
       <workItem from="1713600496630" duration="432000" />
       <workItem from="1713949635959" duration="3682000" />
       <workItem from="1713955188014" duration="595000" />
-      <workItem from="1713961490888" duration="8371000" />
+      <workItem from="1713961490888" duration="9633000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,6 @@ package pages.MainPage;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -22,5 +21,14 @@ public class AdjBetNotifications {
         wait.until(ExpectedConditions.elementToBeClickable(repo.ImportantNotif));
         driver.findElement(repo.CloseNotifCross).click();
         wait.until(ExpectedConditions.numberOfElementsToBe(repo.ImportantNotif, 0));
+    }
+
+    public void CloseFTFNotification() {
+        driver.findElement(repo.CloseNotifCross).click();
+        wait.until(ExpectedConditions.numberOfElementsToBe(repo.FTFMessageContainer, 0));
+    }
+
+    public void WaitForFTFMessage() {
+        wait.until(ExpectedConditions.elementToBeClickable(repo.FTFMessageContainer));
     }
 }
