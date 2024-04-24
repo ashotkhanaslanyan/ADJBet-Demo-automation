@@ -1,24 +1,26 @@
 package pages.MainPage;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-public class NotificationsAlert {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class AdjBetNotifications {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
     private final pages.MainPage.Repository.MainPageRepository repo = new pages.MainPage.Repository.MainPageRepository();
 
-    public NotificationsAlert(WebDriver driver) {
+    public AdjBetNotifications(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
-    public void CloseNotificationsAlert() {
-        wait.until(ExpectedConditions.elementToBeClickable(repo.NotificationsAlertField));
-        driver.findElement(repo.DeclineNotificationsBtn).click();
-        wait.until(ExpectedConditions.numberOfElementsToBe(repo.NotificationsAlertField, 0));
+    public void CloseImportantNotice() {
+        wait.until(ExpectedConditions.elementToBeClickable(repo.ImportantNotif));
+        driver.findElement(repo.CloseNotifCross).click();
+        wait.until(ExpectedConditions.numberOfElementsToBe(repo.ImportantNotif, 0));
     }
 }

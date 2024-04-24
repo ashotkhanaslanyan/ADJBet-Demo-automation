@@ -11,5 +11,10 @@ public class MainPageRepository {
     // Log-in form repo items
     public By UserNameField = By.xpath(".//input[@data-id='username']");
     public By PasswordField = By.xpath(".//input[@data-id='password']");
+    public By LoginBtn = By.xpath(".//button[@data-id='login-btn']");
+
+    // Important Notice notification repo items
+    public By ImportantNotif = By.xpath(".//div[contains(text(), 'Important notice')]");
+    public By CloseNotifCross = By.xpath(".//a[@data-test-id='popup-close']");
 }
 

@@ -1,6 +1,5 @@
 package pages.MainPage;
 
-import java.util.Map;
 import org.openqa.selenium.WebDriver;
 import pages.MainPage.Tools.DecryptCredentials;
 
@@ -13,8 +12,10 @@ public class LogIn {
         this.driver = driver;
     }
 
-    public void LogInWithCredentials() {
-//        driver.findElement(repo.UserNameField).sendKeys(UserName);
-//        driver.findElement(repo.PasswordField).sendKeys(PassWord);
+    public void LogInWithCredentials() throws Exception {
+        DecryptCredentials.Decrypt();
+        driver.findElement(repo.UserNameField).sendKeys(DecryptCredentials.UserName);
+        driver.findElement(repo.PasswordField).sendKeys(DecryptCredentials.PassWord);
+        driver.findElement(repo.LoginBtn).click();
     }
 }

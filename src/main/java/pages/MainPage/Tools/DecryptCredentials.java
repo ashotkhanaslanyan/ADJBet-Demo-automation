@@ -17,7 +17,7 @@ public class DecryptCredentials {
 
     private static final String TRANSFORMATION = "AES/CBC/PKCS5Padding";
 
-    public static void main(String[] args) throws Exception {
+    public static void Decrypt() throws Exception {
         byte[] key = "1234567890123456".getBytes(StandardCharsets.UTF_8);
         byte[] iv = new byte[16];
 
@@ -42,8 +42,5 @@ public class DecryptCredentials {
 
         UserName = (String) data.get("username");
         PassWord = (String) data.get("password");
-
-        System.out.println("Decrypted Username: " + UserName);
-        System.out.println("Decrypted Password: " + PassWord);
     }
 }
