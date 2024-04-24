@@ -18,38 +18,31 @@ public class DecryptCredentials {
     private static final String TRANSFORMATION = "AES/CBC/PKCS5Padding";
 
     public static void main(String[] args) throws Exception {
-        // Initialization Vector and Secret Key
-        byte[] key = "1234567890123456".getBytes(StandardCharsets.UTF_8); // must match encryption key
-        byte[] iv = new byte[16]; // must match encryption IV
+        byte[] key = "1234567890123456".getBytes(StandardCharsets.UTF_8);
+        byte[] iv = new byte[16];
 
         SecretKeySpec keySpec = new SecretKeySpec(key, "AES");
         IvParameterSpec ivSpec = new IvParameterSpec(iv);
 
-        // Decrypt the data
-        Properties props = new Properties(); // Configuration properties, if needed
+        Properties props = new Properties();
         CryptoCipher decipher = Utils.getCipherInstance(TRANSFORMATION, props);
         decipher.init(javax.crypto.Cipher.DECRYPT_MODE, keySpec, ivSpec);
 
-        // Read encrypted data from file
         FileInputStream inputStream = new FileInputStream("encrypted_credentials.dat");
         byte[] encryptedData = new byte[inputStream.available()];
         inputStream.read(encryptedData);
         inputStream.close();
 
-        // Decrypt data
-        byte[] decryptedData = new byte[1024]; // Ensure buffer is large enough
+        byte[] decryptedData = new byte[1024];
         int finalBytes = decipher.doFinal(encryptedData, 0, encryptedData.length, decryptedData, 0);
         String decryptedString = new String(decryptedData, 0, finalBytes, StandardCharsets.UTF_8);
 
-        // Load YAML from decrypted string
         Yaml yaml = new Yaml();
         Map<String, Object> data = yaml.load(decryptedString);
 
-        // Assign to public variables
         UserName = (String) data.get("username");
         PassWord = (String) data.get("password");
 
-        // Optional: Print to verify
         System.out.println("Decrypted Username: " + UserName);
         System.out.println("Decrypted Password: " + PassWord);
     }
