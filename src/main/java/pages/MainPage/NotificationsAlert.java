@@ -5,13 +5,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-public class DeclineNotificationsAlert {
+public class NotificationsAlert {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
     private final pages.MainPage.Repository.MainPageRepository repo = new pages.MainPage.Repository.MainPageRepository();
 
-    public DeclineNotificationsAlert(WebDriver driver) {
+    public NotificationsAlert(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
