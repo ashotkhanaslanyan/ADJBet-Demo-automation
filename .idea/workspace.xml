@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d84f976-d47d-4ee8-858b-83383a3aa7ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage/AdjBetNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage/AdjBetNotifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage/Repository/MainPageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage/Repository/MainPageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NavigationTests/FTFAuthorizedServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NavigationTests/FTFAuthorizedServicesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,27 +34,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MainPageRepository.executor": "Run",
-    "Application.OpenMainPage.executor": "Run",
-    "JUnit.DeclineNotificationsTest.executor": "Run",
-    "JUnit.DeclineNotificationsTest.test_log_in_with_credentials.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainPageRepository.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OpenMainPage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DeclineNotificationsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DeclineNotificationsTest.test_log_in_with_credentials.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.FTFAuthorizedServicesTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.DeclineNotificationsTest">
+}</component>
+  <component name="RunManager" selected="JUnit.FTFAuthorizedServicesTest">
     <configuration name="MainPageRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pages.MainPage.Repository.MainPageRepository" />
       <module name="SoftwareTestingFinal" />
@@ -93,8 +91,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FTFAuthorizedServicesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareTestingFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NavigationTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="NavigationTests" />
+      <option name="MAIN_CLASS_NAME" value="NavigationTests.FTFAuthorizedServicesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FTFAuthorizedServicesTest" />
         <item itemvalue="JUnit.DeclineNotificationsTest" />
         <item itemvalue="Application.MainPageRepository" />
         <item itemvalue="Application.OpenMainPage" />
@@ -120,7 +134,8 @@
       <workItem from="1713600496630" duration="432000" />
       <workItem from="1713949635959" duration="3682000" />
       <workItem from="1713955188014" duration="595000" />
-      <workItem from="1713961490888" duration="9633000" />
+      <workItem from="1713961490888" duration="9692000" />
+      <workItem from="1714035028527" duration="1342000" />
     </task>
     <servers />
   </component>
