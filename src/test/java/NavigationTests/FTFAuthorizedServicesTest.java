@@ -2,13 +2,21 @@ package NavigationTests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.net.URL;
+import java.sql.Time;
+import java.time.Duration;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.Timeout;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import pages.MainPage.AdjBetNotifications;
 import pages.MainPage.LogIn;
@@ -18,18 +26,18 @@ import pages.MainPage.Navigation;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class FTFAuthorizedServicesTest {
 
-    private WebDriver driver;
+    private RemoteWebDriver driver;
     private NotificationsAlert objNotificationsAlert;
     private LogIn objLogIn;
     private AdjBetNotifications objAdjBetNotifications;
     private Navigation objNavigation;
     private pages.MainPage.Repository.MainPageRepository repo = new pages.MainPage.Repository.MainPageRepository();
-
+    ChromeOptions chromeOptions = new ChromeOptions();
 
     @BeforeAll
     public void setup() throws Exception {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver();
+        this.driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
         driver.get("https://www.adjarabet.am/en");
         objNotificationsAlert = new NotificationsAlert(driver);
         objLogIn = new LogIn(driver);
